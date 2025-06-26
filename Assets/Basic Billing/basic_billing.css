@@ -1,0 +1,92 @@
+#invoice-main {
+  margin: 0 20%;
+  background-color: #fff;
+  padding: 10rem 8rem;
+}
+ 
+#invoice-heading-container {
+  display: flex;
+  justify-content: space-between;
+}
+ 
+#company-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 20rem;
+}
+ 
+#company-logo {
+  height: 8rem;
+  width: 8rem;
+}
+#company-address {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+}
+ 
+#invoice-heading-number-date-container {
+  display: flex;
+  flex-direction: column;
+}
+ 
+#heading {
+  align-self: flex-end;
+  font-size: 8rem;
+}
+ 
+#number-date-container {
+  padding: 1rem;
+  background-color: bisque;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 1rem;
+  text-align: right;
+  font-size: 1.5rem;
+}
+ 
+.invoice-number-date-text {
+  font-size: 1.5rem;
+}
+ 
+.secondary-heading {
+  margin-top: 4rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+ 
+#patient-information {
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+}
+ 
+#patient-name {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+ 
+.table {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+ 
+  border-collapse: collapse;
+}
+ 
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+ 
+th {
+  background-color: #eaeaea;
+}
+td {
+  padding-left: 4rem;
+}

@@ -150,6 +150,7 @@ window.onload = function () {
 
   xhttp2 = new XMLHttpRequest();
   const manageStaff = document.getElementById("manage-staff");
+  const payBill = document.getElementById("pay-bill");
   // Getting Role and Vanishing Edit Profile if Necessary
   xhttp2.open(
     "post",
@@ -164,6 +165,9 @@ window.onload = function () {
 
       if (data.role != "admin") {
         manageStaff.classList.add("remove");
+      } else if (data.role == "admin") {
+        payBill.href = "../../Controller/add_sample_users.php";
+        payBill.innerHTML = "Add User";
       }
     }
   };

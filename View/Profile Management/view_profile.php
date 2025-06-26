@@ -116,7 +116,7 @@
             +8801703944467
           </p>
         </div>
-        <a href="../Basic Billing/charge_capture.php" class="link-button">Pay Bill</a>
+        <a href="../Basic Billing/charge_capture.php" class="link-button" id="pay-bill">Pay Bill</a>
         <a href="../Staff Management/staff_list.php" class="link-button" id="manage-staff">Manage Staff</a>
         <a href="edit_profile.php" class="link-button">Edit</a>
         <a href="../../Controller/Profile Management/logout.php" class="link-button">Logout</a>
