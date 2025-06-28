@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 26, 2025 at 02:40 PM
+-- Generation Time: Jun 28, 2025 at 05:41 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -70,9 +70,10 @@ CREATE TABLE `medical_histories` (
 --
 
 INSERT INTO `medical_histories` (`medical_history_id`, `user_history`, `family_history`, `current_drug`, `previous_drug`, `activity_level`, `user_id`) VALUES
-(13, '', '', '', '', 'High', 36),
-(14, 'Thyroid Disorder,', 'Heart disease,', '', '', 'Average', 52),
-(15, 'Kidney Disease,', 'High blood pressure,', '', '', 'Low', 53);
+(1, '', '', '', '', 'High', 36),
+(2, 'Thyroid Disorder,', 'Heart disease,', '', '', 'Average', 52),
+(3, 'Kidney Disease,', 'High blood pressure,', '', '', 'Low', 53),
+(4, 'Seizures,', 'Allergies,', '', '', 'Average', 56);
 
 -- --------------------------------------------------------
 
@@ -104,7 +105,8 @@ INSERT INTO `patients` (`patient_id`, `name`, `dob`, `phone`, `profile_picture`,
 (1, 'Nafiz Ahamed Eshan', '2004-06-15', '01738666612', 'jackparker01321@gmail.com.jpg', 'jackparker01321@gmail.com.png', 'B+', 'madhabdi', 'madhabdi', 'nafiz', 'brother', '01775160612', 47),
 (2, 'Nafiz Ahamed Eshan', '1999-06-20', '01999161299', 'nafizahamed28@gmail.com.jpg', 'nafizahamed28@gmail.com.png', 'A+', 'madhabdi', 'madhabdi', 'nafiz', 'brother', '01732160611', 46),
 (4, 'Nafiz Ahamed Eshan', '2025-06-11', '01561246783', 'ornis400@gmail.com.jpg', 'ornis400@gmail.com.png', 'A-', 'madhabdi', 'madhabdi', 'nafiz', 'brother', '01732160611', 52),
-(5, 'Nafiz Ahamed Eshan', '2000-08-11', '01342316012', 'rahatminhaz45@gmail.com.jpg', 'rahatminhaz45@gmail.com.png', 'A+', 'madhabdi', 'madhabdi', 'nafiz', 'brother', '01786536756', 53);
+(5, 'Nafiz Ahamed Eshan', '2000-08-11', '01342316012', 'rahatminhaz45@gmail.com.jpg', 'rahatminhaz45@gmail.com.png', 'A+', 'madhabdi', 'madhabdi', 'nafiz', 'brother', '01786536756', 53),
+(25, 'Nafiz Ahamed Eshan', '2025-06-11', '01732160612', 'mdkhaledhasananiik@gmail.com.png', 'mdkhaledhasananiik@gmail.com.png', 'B+', 'Mirpur', 'madhabdi', 'nafiz', 'brother', '01786501556', 56);
 
 -- --------------------------------------------------------
 
@@ -149,6 +151,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`user_id`, `email`, `hash`, `role`) VALUES
 (1, 'admin@hmc.com', '$argon2id$v=19$m=131072,t=4,p=2$TU43RFcydzR2T2E2Lm9ieA$LvS0uR5hVyBYyGRZUnJmWJF9/9VQpqdHU+I+e/hP0vY', 'admin'),
 (2, 'admin2@hmc.com', '$argon2id$v=19$m=131072,t=4,p=2$WWkwbUZ4L2FTZXRkZ3Nlbg$eU9cQGoGb7Vq03SYZZCenWTK6jAEqC8JoBK7Eb+J6aw', 'admin'),
+(3, 'doctor3@hmc.com', '$argon2id$v=19$m=131072,t=4,p=2$WWJDejkyd3FqellEUjF1Rw$NGpyMQNsM9WG7GSIXok6d5QT4cLuwf2/IraMt/vb/es', 'doctor'),
 (38, 'dr.sohel@hmc.com', '$argon2id$v=19$m=131072,t=4,p=2$aVROVWZjb1NRUjhUdjR6Lg$vceu+DzvisNlxYEdbMuED++OEVYasSqzJJLetEwDpQs', 'doctor'),
 (39, 'dr.newaz@hmc.com', '$argon2id$v=19$m=131072,t=4,p=2$VEJZU0JyL0pGSE9lMDRiTg$10bjocAluLULhumApO86fHM+ilx097O8qNufJSAedYM', 'doctor'),
 (40, 'dr.merajul@hmc.com', '$argon2id$v=19$m=131072,t=4,p=2$OEFoMFpSWjFOYWFkdVRkUA$mPkvO05kI7/9vb+9O7D9rYbrdoX/eFf7tS1TbXJGrtM', 'doctor'),
@@ -157,7 +160,8 @@ INSERT INTO `users` (`user_id`, `email`, `hash`, `role`) VALUES
 (46, 'nafizahamed28@gmail.com', '$argon2id$v=19$m=131072,t=4,p=2$bGxvZEZxN2p3UmE4SU1hMw$0OPdNj7RHHMUkrx6iwopw/a4Iv7an4TzpT+uTxoxYp8', 'patient'),
 (47, 'jackparker01321@gmail.com', '$argon2id$v=19$m=131072,t=4,p=2$akc3ZDJDd1A2Sk43Q1NSeg$CKaRMrjVoFjSn+M9psJPUhj3PotRLrz7tvneIYaOrw4', 'patient'),
 (52, 'ornis400@gmail.com', '$argon2id$v=19$m=131072,t=4,p=2$cTVadmEwVkFNRE9PQU1LUw$YWDcYmpCzfg9G5SAU15rtEivEufW+fVbg/0kSrLlPAg', 'patient'),
-(53, 'rahatminhaz45@gmail.com', '$argon2id$v=19$m=131072,t=4,p=2$VlBHZGVmTzhMVllocVhzeg$l6UfkwL2Wu/JJbCevpuncvzbilYC13h+hTfaFGPq1yo', 'patient');
+(53, 'rahatminhaz45@gmail.com', '$argon2id$v=19$m=131072,t=4,p=2$VlBHZGVmTzhMVllocVhzeg$l6UfkwL2Wu/JJbCevpuncvzbilYC13h+hTfaFGPq1yo', 'patient'),
+(56, 'mdkhaledhasananiik@gmail.com', '$argon2id$v=19$m=131072,t=4,p=2$NjBVOFFQTGg5M3JGODM5ZA$N1eBpCwsh8zRDSpo+L2P38igXnYJWccoXY3M9+CkDWk', 'patient');
 
 --
 -- Indexes for dumped tables
@@ -209,13 +213,13 @@ ALTER TABLE `doctors`
 -- AUTO_INCREMENT for table `medical_histories`
 --
 ALTER TABLE `medical_histories`
-  MODIFY `medical_history_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `medical_history_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `patients`
 --
 ALTER TABLE `patients`
-  MODIFY `patient_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `patient_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `staffs`
@@ -227,7 +231,7 @@ ALTER TABLE `staffs`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 
 --
 -- Constraints for dumped tables
