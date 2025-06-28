@@ -39,8 +39,8 @@
         <img src="../Assets/Logo/nav-logo.png" alt="logo" id="logo" />
         <div id="nav-link-container">
           <ul id="nav-list">
-            <li><a href="../Landing Page/index.html">Home</a></li>
-            <li><a href="../Doctor Profiles/doctors_list.html">Doctors</a></li>
+            <li><a href="../View/Landing Page/index.html">Home</a></li>
+            <li><a href="../View/Doctor Profiles/doctors_list.html">Doctors</a></li>
             <li><a href="#">About</a></li>
             <li class="active"><a href="#">Book Appointment</a></li>
           </ul>
