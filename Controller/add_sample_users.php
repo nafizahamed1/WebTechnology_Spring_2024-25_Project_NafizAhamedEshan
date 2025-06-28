@@ -44,7 +44,7 @@
             <li><a href="#">About</a></li>
             <li class="active"><a href="#">Book Appointment</a></li>
           </ul>
-          <a href="../Profile Management/view_profile.php"
+          <a href="../View/Profile Management/view_profile.php"
             ><img id="pro-pic" src="../../Assets/Images/sample-pro-pic.JPG"
           /></a>
         </div>
